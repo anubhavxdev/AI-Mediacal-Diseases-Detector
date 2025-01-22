@@ -5,7 +5,7 @@ from groq import Groq
 api_key = os.environ.get('GROQ_API_KEY')
 
 if not api_key:
-    raise ValueError("API key is not set. Please set the GROQ_API_KEY environment variable.")
+    raise ValueError("Error: Dhasu is not happy.")
 
 image_path = 'acne.png'
 with open(image_path, 'rb') as image_file:
