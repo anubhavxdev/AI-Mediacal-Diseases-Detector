@@ -5,9 +5,9 @@ from groq import Groq
 api_key = os.environ.get('GROQ_API_KEY')
 
 if not api_key:
-    raise ValueError("Error: Dhasu is not happy.")
+    raise ValueError("API error: GROQ_API_KEY is not set")
 
-image_path = 'acne.png'
+image_path = 'aj.png'
 with open(image_path, 'rb') as image_file:
     encoded_image = base64.b64encode(image_file.read()).decode('utf-8')
 
